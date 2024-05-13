@@ -11,34 +11,16 @@ class Program
 {
     public static void Main()
     {
-        var driver = new ChromeDriver();
-        var offerList = new List<Offer>();
-        int offerIterator = 1;
-        string xpath = "//*[@id=\"custom-list\"]/li[" + Convert.ToString(offerIterator) + "]";
+        var scraper = new KonsyliumScraper();
+        var collectList = new List<Offer>();
 
-        var majorDict = new Dictionary<string, int>();
-        var locationDict = new Dictionary<string, int>();
-    
-        driver.Url = "https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista/";
-
-        var offerIWebElementList = driver.FindElements(By.ClassName("list-group-offer"));
-
-        foreach(IWebElement element in offerIWebElementList)
+        for (int i = 0; i < 5; i++)
         {
-            Offer o = new Offer(element);
-            offerList.Add(o);
-
-            if (!majorDict.TryGetValue(o.Major, out int _))
-            {
-                majorDict.Add(o.Major, 0);
-            }
-            majorDict[o.Major]++;
+            scraper.UpdateDiverUrl();
+            var offers = scraper.GetOffersFromPage();
+            collectList.AddRange(offers);
         }
     }
 
-    public Offer getOffers(ChromeDriver driver)
-    {
-        
-        throw new NotImplementedException();
-    }
+
 }

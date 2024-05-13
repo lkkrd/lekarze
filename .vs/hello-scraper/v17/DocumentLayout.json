@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\scraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\scraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\konsyliumscraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\konsyliumscraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -18,32 +26,64 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "KonsyliumScraper.cs",
+              "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\KonsyliumScraper.cs",
+              "RelativeDocumentMoniker": "hello-scraper\\KonsyliumScraper.cs",
+              "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\KonsyliumScraper.cs",
+              "RelativeToolTip": "hello-scraper\\KonsyliumScraper.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAswCkAAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T08:48:01.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Offer.cs",
               "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Offer.cs",
               "RelativeDocumentMoniker": "hello-scraper\\Offer.cs",
               "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Offer.cs",
               "RelativeToolTip": "hello-scraper\\Offer.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAwBoAAABqAAAA",
+              "ViewState": "AQIAAAcAAAAAAAAAAAAAABoAAABqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T14:45:15.324Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Program.cs",
               "RelativeDocumentMoniker": "hello-scraper\\Program.cs",
               "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Program.cs",
               "RelativeToolTip": "hello-scraper\\Program.cs",
-              "ViewState": "AQIAABEAAAAAAAAAAAAqwBwAAAAdAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAArwBYAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T11:16:39.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Scraper.cs",
+              "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Scraper.cs",
+              "RelativeDocumentMoniker": "hello-scraper\\Scraper.cs",
+              "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Scraper.cs",
+              "RelativeToolTip": "hello-scraper\\Scraper.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA0AAAAkAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-12T12:03:30.892Z",
               "EditorCaption": ""
             }
           ]

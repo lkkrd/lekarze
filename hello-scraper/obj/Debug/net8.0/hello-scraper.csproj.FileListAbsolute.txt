@@ -22,3 +22,4 @@ C:\Users\mrm\Desktop\Kodowanko\c-sharp\hello-scraper\hello-scraper\obj\Debug\net
 C:\Users\mrm\Desktop\Kodowanko\c-sharp\hello-scraper\hello-scraper\bin\Debug\net8.0\Json.Net.dll
 C:\Users\mrm\Desktop\Kodowanko\c-sharp\hello-scraper\hello-scraper\bin\Debug\net8.0\nunit.framework.dll
 C:\Users\mrm\Desktop\Kodowanko\c-sharp\hello-scraper\hello-scraper\bin\Debug\net8.0\nunit.framework.legacy.dll
+C:\Users\mrm\Desktop\Kodowanko\c-sharp\hello-scraper\hello-scraper\obj\Debug\net8.0\hello-scraper.sourcelink.json

@@ -11,15 +11,9 @@ class Program
 {
     public static void Main()
     {
-        var scraper = new KonsyliumScraper();
-        var collectList = new List<Offer>();
-
-        for (int i = 0; i < 5; i++)
-        {
-            scraper.UpdateDiverUrl();
-            var offers = scraper.GetOffersFromPage();
-            collectList.AddRange(offers);
-        }
+        KonsyliumScraper scraper = new KonsyliumScraper();
+        scraper.pageCount = 5;
+        var list = scraper.GetOfferList();
     }
 
 

@@ -9,15 +9,15 @@ using System.Threading.Tasks;
 
 namespace hello_scraper
 {
-    internal abstract class Scraper
+    abstract class Scraper
     {
-        ChromeDriver driver { get; }
-        string offerClassName { get; }
-        int pageCount { get; set; } // ile stron można zescrapować
-        string pageUrl { get; }
+        public ChromeDriver driver = new ChromeDriver();
+        public string offerClassName { get; set; }
+        public int pageCount { get; set; } // ile stron można zescrapować
+        public string pageUrl { get; set; }
 
-        private void changePage(int pageNum) { driver.Url = "https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista?page={Convert.ToString(pageNum)}#custom-list";}
-        private void resetPage() { driver.Url = pageUrl; }
+        public virtual void changePage(int pageNum) {  }
+        public void resetPage() { driver.Url = pageUrl; }
 
         public List<Offer> GetOfferListFromPage(int pageNum) // zwraca oferty z konkretnej strony
         {
@@ -30,7 +30,7 @@ namespace hello_scraper
                 offerList.Add(o);
             }
 
-            resetPage();
+            resetPage(); // czy da się zrobić tak, żeby ominąć tą linijkę gdy funkcję wywołuje inna konkretna funkcja
             return offerList;
         }
         
@@ -46,7 +46,7 @@ namespace hello_scraper
             return offerList;
         }
 
-        public Dictionary<string, int> GetMajorDictionary(List<Offer> offerList)
+        public Dictionary<string, int> GetMajorDictionary(List<Offer> offerList) // do przeniesienia do osobnego interface / klasy
         {
             var majorDict = new Dictionary<string, int>();
 
@@ -63,6 +63,21 @@ namespace hello_scraper
 
             return majorDict;
         }
+    }
+
+    class KonsyliumScraper : Scraper
+    {
+        public KonsyliumScraper()
+        {
+        this.pageCount = 65;
+        this.pageUrl = "https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista?gad_source=1&page=1#custom-list";
+        this.offerClassName = "list-group-offer";
+        }
+
+
+        public override void changePage(int pageNum) { this.driver.Url = $"https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista?page={Convert.ToString(pageNum)}#custom-list"; }
+
+
 
     }
 }

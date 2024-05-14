@@ -11,12 +11,12 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("hello-scraper")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("hello-scraper.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+662f0b758bd7cf68f49b969f85f36134c33ae771")]
-[assembly: System.Reflection.AssemblyProductAttribute("hello-scraper")]
-[assembly: System.Reflection.AssemblyTitleAttribute("hello-scraper")]
+[assembly: System.Reflection.AssemblyProductAttribute("hello-scraper.Tests")]
+[assembly: System.Reflection.AssemblyTitleAttribute("hello-scraper.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 
 // Wygenerowane przez klasę WriteCodeFragment programu MSBuild.

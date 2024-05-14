@@ -19,7 +19,7 @@ namespace hello_scraper
         public string Location;
         [JsonIgnore]
         public IWebElement ParentElement;
-        public Offer(IWebElement parentElement)
+        public Offer(IWebElement parentElement) // tutaj też trzeba będzie zrobić dziedziczcenie
         {
             this.ParentElement = parentElement;
             this.Major = ParentElement.FindElement(By.ClassName("spec")).Text;

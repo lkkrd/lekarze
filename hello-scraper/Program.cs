@@ -12,9 +12,8 @@ class Program
     public static void Main()
     {
         KonsyliumScraper scraper = new KonsyliumScraper();
-        scraper.pageCount = 5;
-        var list = scraper.GetOfferList();
+        scraper.setPageCount();
+        Console.WriteLine("");
+        
     }
-
-
 }

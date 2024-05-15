@@ -11,7 +11,7 @@ using Newtonsoft.Json;
 
 namespace hello_scraper
 {
-    internal class Offer
+    public class Offer
     {
         public string Xpath;
         public string Major;

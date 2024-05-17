@@ -13,7 +13,5 @@ class Program
     {
         KlinikaScraper scraper = new KlinikaScraper();
         var list = scraper.GetOfferList();
-
-        
     }
 }

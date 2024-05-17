@@ -11,36 +11,6 @@ using Newtonsoft.Json;
 
 namespace hello_scraper
 {
-/*    public class Offer
-    {
-        public string major;
-        public string? date;
-        public string location;
-        [JsonIgnore]
-        public IWebElement parentElement;
-
-        public Offer(IWebElement parentElement)
-        {
-            this.parentElement = parentElement;
-        }
-
-
-        public string Desc()
-        {
-            return JsonConvert.SerializeObject(this);
-        }
-    }*/
-
-/*    public class KonsyliumOffer1 : Offer
-    {
-        public KonsyliumOffer1(IWebElement parentElement)
-        {
-            this.major = parentElement.FindElement(By.ClassName("spec")).Text;
-            this.location = parentElement.FindElement(By.ClassName("workplace")).Text;
-            this.date = parentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago");
-
-        }
-    }*/
 
     public interface IOffer
     {
@@ -65,5 +35,25 @@ namespace hello_scraper
             this.location = parentElement.FindElement(By.ClassName("workplace")).Text;
             this.date = parentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago");
         }
+    }
+
+    public class KlinikaOffer : IOffer
+    {
+        public string major { get; set; }
+        public string? date { get; set; }
+        public string location { get; set; }
+        [JsonIgnore]
+        public IWebElement parentElement { get; set; }
+
+        public KlinikaOffer(IWebElement parentElement)
+        {
+            this.parentElement = parentElement;
+            this.major = parentElement.FindElement(By.XPath("div/div[1]/h2/span[2]")).Text;
+            this.location = parentElement.FindElement(By.XPath("div/div[4]/div/p[2]")).Text;
+        }
+
+
+
+
     }
 }

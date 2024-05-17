@@ -106,7 +106,7 @@ namespace hello_scraper
         }
         public override IOffer convertElementToOffer(IWebElement element)
         {
-            throw new NotImplementedException();
+            return new KlinikaOffer(element);
         }
         public override void changePage(int page)
         { 

@@ -17,15 +17,9 @@ namespace hello_scraper
         public string offerClassName { get; set; }
         public int pageCount { get; set; } // ile stron można zescrapować
         public string pageUrl { get; set; }
+        public string siteName { get; set; }
 
         public abstract void changePage(int pageNum);
-
-        public int setPageCount()
-        {
-            changePage(1);
-            var max = driver.FindElement(By.ClassName("page-away-9")).Text;
-            return Convert.ToInt32(max);
-        }
 
         public void resetPage() { driver.Url = pageUrl; }
 
@@ -36,7 +30,7 @@ namespace hello_scraper
             var offerIWebElementList = driver.FindElements(By.ClassName(this.offerClassName));
             foreach (IWebElement element in offerIWebElementList)
             {
-                Offer o = new Offer(element);
+                Offer o = new KonsyliumOffer(element);
                 offerList.Add(o);
             }
 
@@ -54,7 +48,7 @@ namespace hello_scraper
             return offerList;
         }
 
-        public IEnumerable<object> getMajorScores(List<Offer> offerList)
+        /*public IEnumerable<object> getMajorScores(List<Offer> offerList)
         {
             return offerList
                 .GroupBy(offer => offer.Major)
@@ -65,7 +59,7 @@ namespace hello_scraper
         {
             string json = JsonConvert.SerializeObject(getMajorScores(GetOfferList()), Formatting.Indented);
             File.WriteAllText(filepath, json);
-        }
+        }*/
 
     }
 
@@ -77,18 +71,45 @@ namespace hello_scraper
     {
         public KonsyliumScraper()
         {
-        this.pageUrl = "https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista?gad_source=1&page=1#custom-list";
-        this.offerClassName = "list-group-offer";
-        this.pageCount = setPageCount();
+            this.pageUrl = "https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista?gad_source=1&page=1#custom-list";
+            this.offerClassName = "list-group-offer";
+            this.pageCount = getPageCount();
+            this.siteName = "Konsylium";
         }
 
-
+        public int getPageCount()
+        {
+            changePage(1);
+            var max = driver.FindElement(By.ClassName("page-away-9")).Text;
+            return Convert.ToInt32(max);
+        }
 
         public override void changePage(int pageNum) { this.driver.Url = $"https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista?page={Convert.ToString(pageNum)}#custom-list"; }
 
-        public IWebElement returnClass(string className)
+
+    }
+
+    class KlinikaScraper : Scraper
+    {
+        public KlinikaScraper()
         {
-            return driver.FindElement(By.ClassName(className));
+            this.pageUrl = "https://klinikaofert.pl/";
+            this.offerClassName = "ogl-box";
+            this.pageCount = 1;
+            this.siteName = "KlinikaOfert";
         }
+
+        public override void changePage(int page)
+        { 
+            if (page != 1)
+            {
+                Console.WriteLine("This site has only one page");
+            }
+
+            driver.Url = this.pageUrl; 
+        }
+
+
+
     }
 }

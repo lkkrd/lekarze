@@ -13,23 +13,27 @@ namespace hello_scraper
 {
     public class Offer
     {
-        public string Xpath;
         public string Major;
-        public string Date;
+        public string? Date;
         public string Location;
         [JsonIgnore]
         public IWebElement ParentElement;
-        public Offer(IWebElement parentElement) // tutaj też trzeba będzie zrobić dziedziczcenie
+        
+
+        public string Desc()
+        {
+            return JsonConvert.SerializeObject(this);
+        }
+    }
+
+    public class KonsyliumOffer : Offer
+    {
+        public KonsyliumOffer(IWebElement parentElement)
         {
             this.ParentElement = parentElement;
             this.Major = ParentElement.FindElement(By.ClassName("spec")).Text;
             this.Location = ParentElement.FindElement(By.ClassName("workplace")).Text;
             this.Date = ParentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago");
-        }
-
-        public string Desc()
-        {
-            return JsonConvert.SerializeObject(this);
         }
     }
 }

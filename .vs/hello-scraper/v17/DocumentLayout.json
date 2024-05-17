@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\scraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{38E10CBC-13E2-4911-BB6F-599F3AE167CC}|hello-scraper.Tests\\hello-scraper.Tests.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
@@ -58,26 +58,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Offer.cs",
               "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Offer.cs",
               "RelativeDocumentMoniker": "hello-scraper\\Offer.cs",
               "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Offer.cs",
               "RelativeToolTip": "hello-scraper\\Offer.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB0AAAAcAAAA",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCMAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T14:45:15.324Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Program.cs",
               "RelativeDocumentMoniker": "hello-scraper\\Program.cs",
               "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Program.cs",
               "RelativeToolTip": "hello-scraper\\Program.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAA8AAAAIAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-10T11:16:39.755Z",
               "EditorCaption": ""
@@ -96,7 +96,7 @@
               "RelativeDocumentMoniker": "hello-scraper\\Scraper.cs",
               "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Scraper.cs",
               "RelativeToolTip": "hello-scraper\\Scraper.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAA6wFcAAAAAAAAA",
+              "ViewState": "AQIAABMAAAAAAAAAAAAcwCIAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T12:03:30.892Z",
               "EditorCaption": ""

@@ -11,9 +11,9 @@ class Program
 {
     public static void Main()
     {
-        KonsyliumScraper scraper = new KonsyliumScraper();
-        scraper.setPageCount();
-        Console.WriteLine("");
+        KlinikaScraper scraper = new KlinikaScraper();
+        var list = scraper.GetOfferList();
+
         
     }
 }

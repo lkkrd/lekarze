@@ -20,26 +20,27 @@ namespace hello_scraper
         public string siteName { get; set; }
 
         public abstract void changePage(int pageNum);
+        public abstract IOffer convertElementToOffer(IWebElement element);
 
         public void resetPage() { driver.Url = pageUrl; }
 
-        public List<Offer> GetOfferListFromPage(int pageNum) // zwraca oferty z konkretnej strony
+        public List<IOffer> GetOfferListFromPage(int pageNum) // zwraca oferty z konkretnej strony
         {
             changePage(pageNum);
-            var offerList = new List<Offer>();
+            List<IOffer> offerList = new List<IOffer>();
             var offerIWebElementList = driver.FindElements(By.ClassName(this.offerClassName));
             foreach (IWebElement element in offerIWebElementList)
             {
-                Offer o = new KonsyliumOffer(element);
+                IOffer o = convertElementToOffer(element);
                 offerList.Add(o);
             }
 
             return offerList;
         }
         
-        public List <Offer> GetOfferList() // zwraca oferty ze wszystkich stron
+        public List <IOffer> GetOfferList() // zwraca oferty ze wszystkich stron
         {
-            var offerList = new List<Offer>();
+            var offerList = new List<IOffer>();
             for (int i = 1; i < this.pageCount + 1; i++ )
             {
                 offerList.AddRange(GetOfferListFromPage(i));
@@ -77,6 +78,11 @@ namespace hello_scraper
             this.siteName = "Konsylium";
         }
 
+        public override IOffer convertElementToOffer(IWebElement element)
+        {
+            return new KonsyliumOffer(element);
+        }
+
         public int getPageCount()
         {
             changePage(1);
@@ -98,7 +104,10 @@ namespace hello_scraper
             this.pageCount = 1;
             this.siteName = "KlinikaOfert";
         }
-
+        public override IOffer convertElementToOffer(IWebElement element)
+        {
+            throw new NotImplementedException();
+        }
         public override void changePage(int page)
         { 
             if (page != 1)

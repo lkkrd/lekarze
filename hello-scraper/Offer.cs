@@ -19,41 +19,41 @@ namespace hello_scraper
         string location { get; set; }
 
     }
-
-    public class KonsyliumOffer : IOffer
+    public abstract class Offer : IOffer
     {
         public string major { get; set; }
         public string? date { get; set; }
         public string location { get; set; }
-        [JsonIgnore]
-        public IWebElement parentElement { get; set; }
 
-        public KonsyliumOffer(IWebElement parentElement)
+        protected IWebElement parentElement;
+        public Offer(IWebElement parentElement)
         {
             this.parentElement = parentElement;
-            this.major = parentElement.FindElement(By.ClassName("spec")).Text;
-            this.location = parentElement.FindElement(By.ClassName("workplace")).Text;
-            this.date = parentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago");
+            this.date = getDate();
+            this.location = getLocation();
+            this.major = getMajor();
         }
+
+        protected abstract string getMajor();
+        protected abstract string? getDate();
+        protected abstract string getLocation();
     }
 
-    public class KlinikaOffer : IOffer
+    public class KonsyliumOffer : Offer
     {
-        public string major { get; set; }
-        public string? date { get; set; }
-        public string location { get; set; }
-        [JsonIgnore]
-        public IWebElement parentElement { get; set; }
-
-        public KlinikaOffer(IWebElement parentElement)
-        {
-            this.parentElement = parentElement;
-            this.major = parentElement.FindElement(By.XPath("div/div[1]/h2/span[2]")).Text;
-            this.location = parentElement.FindElement(By.XPath("div/div[4]/div/p[2]")).Text;
-        }
+        public KonsyliumOffer(IWebElement parentElement) : base(parentElement) { }
+        protected override string getMajor() { return parentElement.FindElement(By.ClassName("spec")).Text; }
+        protected override string getLocation() { return parentElement.FindElement(By.ClassName("workplace")).Text; }
+        protected override string getDate() { return parentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago"); }
+    }
 
 
 
-
+    public class KlinikaOffer : Offer
+    {
+        public KlinikaOffer(IWebElement parentElement) : base(parentElement) { }
+        protected override string getMajor() { return parentElement.FindElement(By.XPath("div/div[1]/h2/span[2]")).Text;}
+        protected override string getLocation() { return parentElement.FindElement(By.XPath("div/div[4]/div/p[2]")).Text; }
+        protected override string? getDate() { return null; }
     }
 }

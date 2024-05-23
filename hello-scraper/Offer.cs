@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.DevTools.V122.DOM;
 using Json.Net;
 using System;
 using System.Collections.Generic;
@@ -34,7 +33,7 @@ namespace hello_scraper
             this.major = getMajor();
         }
 
-        protected abstract string getMajor();
+        public abstract string getMajor();
         protected abstract string? getDate();
         protected abstract string getLocation();
     }
@@ -42,7 +41,7 @@ namespace hello_scraper
     public class KonsyliumOffer : Offer
     {
         public KonsyliumOffer(IWebElement parentElement) : base(parentElement) { }
-        protected override string getMajor() { return parentElement.FindElement(By.ClassName("spec")).Text; }
+        public override string getMajor() { return parentElement.FindElement(By.ClassName("spec")).Text; }
         protected override string getLocation() { return parentElement.FindElement(By.ClassName("workplace")).Text; }
         protected override string getDate() { return parentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago"); }
     }
@@ -52,7 +51,7 @@ namespace hello_scraper
     public class KlinikaOffer : Offer
     {
         public KlinikaOffer(IWebElement parentElement) : base(parentElement) { }
-        protected override string getMajor() { return parentElement.FindElement(By.XPath("div/div[1]/h2/span[2]")).Text;}
+        public override string getMajor() { return parentElement.FindElement(By.XPath("div/div[1]/h2/span[2]")).Text;}
         protected override string getLocation() { return parentElement.FindElement(By.XPath("div/div[4]/div/p[2]")).Text; }
         protected override string? getDate() { return null; }
     }

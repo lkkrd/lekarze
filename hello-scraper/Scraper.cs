@@ -1,7 +1,6 @@
 ﻿using Newtonsoft.Json;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using OpenQA.Selenium.DevTools.V122.Network;
 using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;

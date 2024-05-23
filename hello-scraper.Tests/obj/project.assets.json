@@ -385,7 +385,7 @@
           "build/netcoreapp3.1/NUnit3TestAdapter.props": {}
         }
       },
-      "Selenium.WebDriver/4.20.0": {
+      "Selenium.WebDriver/4.21.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -449,7 +449,7 @@
         "dependencies": {
           "Json.Net": "1.0.33",
           "NUnit": "4.1.0",
-          "Selenium.WebDriver": "4.20.0"
+          "Selenium.WebDriver": "4.21.0"
         },
         "compile": {
           "bin/placeholder/hello-scraper.dll": {}
@@ -945,10 +945,10 @@
         "nunit_256.png"
       ]
     },
-    "Selenium.WebDriver/4.20.0": {
-      "sha512": "Z9rYD5t2d7nBhjluj5MxnrTqMjrfGDQSXWThIdBMwgpVCGTcHMYot7nWV3XoVnUtUBb5wrYag++GV9vq/evTZQ==",
+    "Selenium.WebDriver/4.21.0": {
+      "sha512": "3xIx4CJunIoLEOROfDKILIzf76WfphTpQJYE98stG1GBVBKhFO5E6wXNfCqdiWt34iNlckcDr3z+qCD+RPfuUQ==",
       "type": "package",
-      "path": "selenium.webdriver/4.20.0",
+      "path": "selenium.webdriver/4.21.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -961,7 +961,7 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.20.0.nupkg.sha512",
+        "selenium.webdriver.4.21.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     },
@@ -1030,6 +1030,7 @@
       "NUnit >= 4.1.0",
       "NUnit.Analyzers >= 3.9.0",
       "NUnit3TestAdapter >= 4.5.0",
+      "Selenium.WebDriver >= 4.21.0",
       "coverlet.collector >= 6.0.0",
       "hello-scraper >= 1.0.0"
     ]
@@ -1101,6 +1102,10 @@
           "NUnit3TestAdapter": {
             "target": "Package",
             "version": "[4.5.0, )"
+          },
+          "Selenium.WebDriver": {
+            "target": "Package",
+            "version": "[4.21.0, )"
           },
           "coverlet.collector": {
             "target": "Package",

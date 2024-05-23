@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "TeMNHxfI+1fJVW3ISQchB0C0ay0USZo5oDdv9jmn1YSJDLyiVG5CI78G/0Wm3njWh+zkD0Tqqvzu1siX1ZnhmQ==",
+  "dgSpecHash": "IojLqIxNEIp0HdsJ2NyGqsiZFl+yJ4VSt/DO2OYUmTXwSZ+O5hsokxwq0Y89vM/81hQ/D8pZhROl9cLmGZpz1A==",
   "success": true,
   "projectFilePath": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\hello-scraper.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mrm\\.nuget\\packages\\json.net\\1.0.33\\json.net.1.0.33.nupkg.sha512",
     "C:\\Users\\mrm\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\mrm\\.nuget\\packages\\nunit\\4.1.0\\nunit.4.1.0.nupkg.sha512",
-    "C:\\Users\\mrm\\.nuget\\packages\\selenium.webdriver\\4.20.0\\selenium.webdriver.4.20.0.nupkg.sha512"
+    "C:\\Users\\mrm\\.nuget\\packages\\selenium.webdriver\\4.21.0\\selenium.webdriver.4.21.0.nupkg.sha512"
   ],
   "logs": []
 }

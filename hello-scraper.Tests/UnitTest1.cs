@@ -12,7 +12,6 @@ namespace hello_scraper.Tests
         public void GetOfferListFromPage_WhenPageInBound_ReturnsOfferList(int page)
         {
             //arrange
-            var scraper = new KonsyliumScraper();
 
             //act
 

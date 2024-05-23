@@ -46,7 +46,7 @@
           "build/NUnit.props": {}
         }
       },
-      "Selenium.WebDriver/4.20.0": {
+      "Selenium.WebDriver/4.21.0": {
         "type": "package",
         "dependencies": {
           "Newtonsoft.Json": "13.0.1"
@@ -133,10 +133,10 @@
         "nunit.nuspec"
       ]
     },
-    "Selenium.WebDriver/4.20.0": {
-      "sha512": "Z9rYD5t2d7nBhjluj5MxnrTqMjrfGDQSXWThIdBMwgpVCGTcHMYot7nWV3XoVnUtUBb5wrYag++GV9vq/evTZQ==",
+    "Selenium.WebDriver/4.21.0": {
+      "sha512": "3xIx4CJunIoLEOROfDKILIzf76WfphTpQJYE98stG1GBVBKhFO5E6wXNfCqdiWt34iNlckcDr3z+qCD+RPfuUQ==",
       "type": "package",
-      "path": "selenium.webdriver/4.20.0",
+      "path": "selenium.webdriver/4.21.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -149,7 +149,7 @@
         "manager/linux/selenium-manager",
         "manager/macos/selenium-manager",
         "manager/windows/selenium-manager.exe",
-        "selenium.webdriver.4.20.0.nupkg.sha512",
+        "selenium.webdriver.4.21.0.nupkg.sha512",
         "selenium.webdriver.nuspec"
       ]
     }
@@ -158,7 +158,7 @@
     "net8.0": [
       "Json.Net >= 1.0.33",
       "NUnit >= 4.1.0",
-      "Selenium.WebDriver >= 4.20.0"
+      "Selenium.WebDriver >= 4.21.0"
     ]
   },
   "packageFolders": {
@@ -215,7 +215,7 @@
           },
           "Selenium.WebDriver": {
             "target": "Package",
-            "version": "[4.20.0, )"
+            "version": "[4.21.0, )"
           }
         },
         "imports": [

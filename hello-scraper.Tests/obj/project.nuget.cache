@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BmvURHQZDfmZus9PeDWKR/pgyxcam8KFzH11oZZGv58I1PUFxQUCRR8AcJFz/kp7GGRzz9vAg9/Qb4tHuWdLow==",
+  "dgSpecHash": "SJt0yEfEMy5yt/NCxRJjBZuIjT8C4sMHpuUYwyZ9sf++SCGR0fdDLicFpokTs+7mFqvAS6tEsZSp1JUzeFk00A==",
   "success": true,
   "projectFilePath": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper.Tests\\hello-scraper.Tests.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,7 @@
     "C:\\Users\\mrm\\.nuget\\packages\\nunit\\4.1.0\\nunit.4.1.0.nupkg.sha512",
     "C:\\Users\\mrm\\.nuget\\packages\\nunit.analyzers\\3.9.0\\nunit.analyzers.3.9.0.nupkg.sha512",
     "C:\\Users\\mrm\\.nuget\\packages\\nunit3testadapter\\4.5.0\\nunit3testadapter.4.5.0.nupkg.sha512",
-    "C:\\Users\\mrm\\.nuget\\packages\\selenium.webdriver\\4.20.0\\selenium.webdriver.4.20.0.nupkg.sha512",
+    "C:\\Users\\mrm\\.nuget\\packages\\selenium.webdriver\\4.21.0\\selenium.webdriver.4.21.0.nupkg.sha512",
     "C:\\Users\\mrm\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",
     "C:\\Users\\mrm\\.nuget\\packages\\system.reflection.metadata\\1.6.0\\system.reflection.metadata.1.6.0.nupkg.sha512"
   ],

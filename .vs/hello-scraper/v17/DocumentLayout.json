@@ -3,24 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{38E10CBC-13E2-4911-BB6F-599F3AE167CC}|hello-scraper.Tests\\hello-scraper.Tests.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{38E10CBC-13E2-4911-BB6F-599F3AE167CC}|hello-scraper.Tests\\hello-scraper.Tests.csproj|solutionrelative:hello-scraper.tests\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{38E10CBC-13E2-4911-BB6F-599F3AE167CC}|hello-scraper.Tests\\hello-scraper.Tests.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper.tests\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38E10CBC-13E2-4911-BB6F-599F3AE167CC}|hello-scraper.Tests\\hello-scraper.Tests.csproj|solutionrelative:hello-scraper.tests\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\dictexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\dictexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{38E10CBC-13E2-4911-BB6F-599F3AE167CC}|hello-scraper.Tests\\hello-scraper.Tests.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper.tests\\offertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{38E10CBC-13E2-4911-BB6F-599F3AE167CC}|hello-scraper.Tests\\hello-scraper.Tests.csproj|solutionrelative:hello-scraper.tests\\offertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\scraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\scraper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\offer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\dictexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\dictexporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|c:\\users\\mrm\\desktop\\kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{78E215CB-ACB1-4BDD-820D-3796D1734D79}|hello-scraper\\hello-scraper.csproj|solutionrelative:hello-scraper\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,11 +34,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 254,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "OfferTests.cs",
+              "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper.Tests\\OfferTests.cs",
+              "RelativeDocumentMoniker": "hello-scraper.Tests\\OfferTests.cs",
+              "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper.Tests\\OfferTests.cs",
+              "RelativeToolTip": "hello-scraper.Tests\\OfferTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADoAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T07:11:02.9Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Offer.cs",
               "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Offer.cs",
               "RelativeDocumentMoniker": "hello-scraper\\Offer.cs",
@@ -47,46 +64,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "UnitTest1.cs",
-              "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper.Tests\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "hello-scraper.Tests\\UnitTest1.cs",
-              "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper.Tests\\UnitTest1.cs*",
-              "RelativeToolTip": "hello-scraper.Tests\\UnitTest1.cs*",
-              "ViewState": "AQIAACMAAAAAAAAAAAAYwC0AAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-23T07:11:02.9Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Scraper.cs",
               "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Scraper.cs",
               "RelativeDocumentMoniker": "hello-scraper\\Scraper.cs",
               "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Scraper.cs",
               "RelativeToolTip": "hello-scraper\\Scraper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAhAAAA",
+              "ViewState": "AQIAABEAAAAAAAAAAAA3wBkAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-17T11:54:28.045Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper.Tests\\Class1.cs",
+              "RelativeDocumentMoniker": "hello-scraper.Tests\\Class1.cs",
+              "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper.Tests\\Class1.cs",
+              "RelativeToolTip": "hello-scraper.Tests\\Class1.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAQwBsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-23T12:45:20.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "DictExporter.cs",
               "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\DictExporter.cs",
               "RelativeDocumentMoniker": "hello-scraper\\DictExporter.cs",
               "ToolTip": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\DictExporter.cs",
               "RelativeToolTip": "hello-scraper\\DictExporter.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAJAAAA",
+              "ViewState": "AQIAABQAAAAAAAAAAAA1wCQAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T09:56:07.705Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\Program.cs",
               "RelativeDocumentMoniker": "hello-scraper\\Program.cs",

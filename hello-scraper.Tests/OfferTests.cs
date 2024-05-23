@@ -51,5 +51,11 @@ namespace hello_scraper.Tests
             //assert
             Assert.That(offer.major, Is.EqualTo("important-major"));
         }
+        [Test]
+        public void KlinikaOffer_OnInit_DateIsNull()
+        {
+            var offer = new KlinikaOffer(fakeWebElement);
+            Assert.That(offer.date, Is.Null);
+        }
     }
 }

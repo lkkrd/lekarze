@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hello-scraper")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ee74da99c604f351b450599f6399d40f15b409e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c1bf90e4c86825d158431b1915156cc91675dea8")]
 [assembly: System.Reflection.AssemblyProductAttribute("hello-scraper")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hello-scraper")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

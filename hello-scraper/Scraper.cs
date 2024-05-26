@@ -12,14 +12,14 @@ namespace hello_scraper
 {
     public abstract class Scraper
     {
-        public ChromeDriver driver = new ChromeDriver();
-        public string offerClassName { get; set; }
-        public int pageCount { get; set; } // ile stron można zescrapować
-        public string pageUrl { get; set; }
-        public string siteName { get; set; }
+        protected ChromeDriver driver = new ChromeDriver();
+        public string offerClassName;
+        public int pageCount; // ile stron można zescrapować
+        public string pageUrl;
+        public string siteName;
 
-        public abstract void changePage(int pageNum);
-        public abstract IOffer convertElementToOffer(IWebElement element);
+        protected abstract void changePage(int pageNum);
+        protected abstract IOffer convertElementToOffer(IWebElement element);
 
         public void resetPage() { driver.Url = pageUrl; }
 
@@ -77,7 +77,7 @@ namespace hello_scraper
             this.siteName = "Konsylium";
         }
 
-        public override IOffer convertElementToOffer(IWebElement element)
+        protected override IOffer convertElementToOffer(IWebElement element)
         {
             return new KonsyliumOffer(element);
         }
@@ -89,7 +89,7 @@ namespace hello_scraper
             return Convert.ToInt32(max);
         }
 
-        public override void changePage(int pageNum) { this.driver.Url = $"https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista?page={Convert.ToString(pageNum)}#custom-list"; }
+        protected override void changePage(int pageNum) { this.driver.Url = $"https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista?page={Convert.ToString(pageNum)}#custom-list"; }
 
 
     }
@@ -103,11 +103,11 @@ namespace hello_scraper
             this.pageCount = 1;
             this.siteName = "KlinikaOfert";
         }
-        public override IOffer convertElementToOffer(IWebElement element)
+        protected override IOffer convertElementToOffer(IWebElement element)
         {
             return new KlinikaOffer(element);
         }
-        public override void changePage(int page)
+        protected override void changePage(int page)
         { 
             if (page != 1)
             {

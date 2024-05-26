@@ -10,7 +10,7 @@ using NUnit.Framework.Internal;
 namespace hello_scraper.Tests
 {
     [TestFixture]
-    internal class ExporterTests
+    class ExporterTests
     {
         List<IOffer> offers;
         IOffer o1;

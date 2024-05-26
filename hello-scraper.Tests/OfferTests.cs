@@ -6,7 +6,7 @@ using static System.Runtime.InteropServices.JavaScript.JSType;
 namespace hello_scraper.Tests
 {
     [TestFixture]
-    public class Tests
+    class Tests
     {
         IWebElement fakeWebElement;
         IWebElement fakeMajorElement;

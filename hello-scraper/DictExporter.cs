@@ -34,5 +34,10 @@ namespace hello_scraper
                 .Select(group => new { Location = group.Key, Value = group.Count() });
             return JsonConvert.SerializeObject (counter, Formatting.Indented);
         }
+
+        public static void ExportToFile(string str_list, string filename)
+        {
+            File.WriteAllText("C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\ExportedFiles\\" + filename, str_list);
+        }
     }
 }

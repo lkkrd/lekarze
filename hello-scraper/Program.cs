@@ -10,7 +10,10 @@ class Program
 {
     public static void Main()
     {
-        KlinikaScraper scraper = new KlinikaScraper();
-        var list = scraper.GetOfferList();
+        KlinikaScraper klinikaScraper = new KlinikaScraper();
+        var klinikaList = klinikaScraper.GetOfferList();
+
+        KonsyliumScraper konsyliumScraper = new KonsyliumScraper(return_pages: 5);
+        var konsyliumList = konsyliumScraper.GetOfferList();
     }
 }

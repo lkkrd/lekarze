@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = hello_scraper.Tests
-build_property.ProjectDir = C:\Users\mrm\Desktop\Kodowanko\c-sharp\hello-scraper\hello-scraper.Tests\
+build_property.ProjectDir = C:\Users\Guest\Desktop\lekarze\hello-scraper.Tests\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

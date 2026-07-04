@@ -19,7 +19,7 @@ namespace hello_scraper
         public string siteName;
 
         protected abstract void changePage(int pageNum);
-        protected abstract IOffer convertElementToOffer(IWebElement element);
+        protected abstract IOffer convertElementToOffer(IWebElement element); // change interface to class?
 
         public void resetPage() { driver.Url = pageUrl; }
 
@@ -47,20 +47,6 @@ namespace hello_scraper
 
             return offerList;
         }
-
-        /*public IEnumerable<object> getMajorScores(List<Offer> offerList)
-        {
-            return offerList
-                .GroupBy(offer => offer.Major)
-                .Select(group => new { key = group.Key, val = group.Count() }) ;
-        }
-
-        public void exportToJson(string filepath = "scores.json")
-        {
-            string json = JsonConvert.SerializeObject(getMajorScores(GetOfferList()), Formatting.Indented);
-            File.WriteAllText(filepath, json);
-        }*/
-
     }
 
 
@@ -69,11 +55,11 @@ namespace hello_scraper
 
     class KonsyliumScraper : Scraper
     {
-        public KonsyliumScraper()
+        public KonsyliumScraper(int? return_pages = null) // if no value then get all pages available
         {
             this.pageUrl = "https://konsylium24.pl/kompendium24/praca/oferty-pracy/lista?gad_source=1&page=1#custom-list";
             this.offerClassName = "list-group-offer";
-            this.pageCount = getPageCount();
+            this.pageCount = getPageCount(return_pages); 
             this.siteName = "Konsylium";
         }
 
@@ -82,8 +68,12 @@ namespace hello_scraper
             return new KonsyliumOffer(element);
         }
 
-        public int getPageCount()
+        public int getPageCount(int? return_pages = null)
         {
+            if (return_pages != null)
+            {
+                return return_pages ?? 0;
+            }
             changePage(1);
             var max = driver.FindElement(By.ClassName("page-away-9")).Text;
             return Convert.ToInt32(max);

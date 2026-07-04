@@ -162,19 +162,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\mrm\\.nuget\\packages\\": {}
+    "C:\\Users\\Guest\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\hello-scraper.csproj",
+      "projectUniqueName": "C:\\Users\\Guest\\Desktop\\lekarze\\hello-scraper\\hello-scraper.csproj",
       "projectName": "hello-scraper",
-      "projectPath": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\hello-scraper.csproj",
-      "packagesPath": "C:\\Users\\mrm\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mrm\\Desktop\\Kodowanko\\c-sharp\\hello-scraper\\hello-scraper\\obj\\",
+      "projectPath": "C:\\Users\\Guest\\Desktop\\lekarze\\hello-scraper\\hello-scraper.csproj",
+      "packagesPath": "C:\\Users\\Guest\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Guest\\Desktop\\lekarze\\hello-scraper\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mrm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Guest\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

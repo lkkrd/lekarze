@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Newtonsoft.Json;
 using OpenQA.Selenium.Internal;
+using System.Text.RegularExpressions;
 
 namespace hello_scraper
 {
@@ -17,7 +18,7 @@ namespace hello_scraper
         string major { get; set; }
         string? date { get; set; }
         string location { get; set; }
-        string? salary { get; set; }
+        decimal? salary { get; set; }
 
     }
     public abstract class Offer : IOffer
@@ -25,7 +26,7 @@ namespace hello_scraper
         public string major { get; set; }
         public string? date { get; set; }
         public string location { get; set; }
-        public string? salary { get; set; }
+        public decimal? salary { get; set; }
 
         protected IWebElement parentElement;
         public Offer(IWebElement parentElement)
@@ -40,7 +41,7 @@ namespace hello_scraper
         public abstract string getMajor();
         protected abstract string? getDate();
         protected abstract string getLocation();
-        protected abstract string? getSalary();
+        protected abstract decimal? getSalary();
     }
 
     public class KonsyliumOffer : Offer
@@ -49,7 +50,7 @@ namespace hello_scraper
         public override string getMajor() { return parentElement.FindElement(By.ClassName("spec")).Text; }
         protected override string getLocation() { return parentElement.FindElement(By.ClassName("workplace")).Text; }
         protected override string? getDate() { return parentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago"); }
-        protected override string? getSalary() { return null; }
+        protected override decimal? getSalary() { return null; }
     }
 
 
@@ -61,11 +62,20 @@ namespace hello_scraper
         protected override string getLocation() { return parentElement.FindElement(By.XPath("div/div[4]/div/p[2]")).Text; }
 
         protected override string? getDate() { return null; }
-        protected override string? getSalary()
+        protected override decimal? getSalary()
         {
             try
             {
-                return parentElement.FindElement(By.XPath("div/div[3]/div/p[2]")).Text;
+                string str_salary = parentElement.FindElement(By.XPath("div/div[3]/div/p[2]")).Text;
+                Match match = Regex.Match(str_salary, @"[\d.,]+");
+                if (match.Success)
+                {
+                    return decimal.Parse(match.Value);
+                }
+                else
+                {
+                    return null;
+                }
             }
             catch { return null; }
         }

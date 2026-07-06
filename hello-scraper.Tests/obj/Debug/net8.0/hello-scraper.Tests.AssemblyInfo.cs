@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("hello-scraper.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+36a3637dd09a2d5fdd52feea5fad0f7176687093")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a69a65e2d1e3f2b4b4244e3ab53efd6a40983fcf")]
 [assembly: System.Reflection.AssemblyProductAttribute("hello-scraper.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("hello-scraper.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

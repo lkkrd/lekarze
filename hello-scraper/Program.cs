@@ -13,7 +13,15 @@ class Program
         KlinikaScraper klinikaScraper = new KlinikaScraper();
         var klinikaList = klinikaScraper.GetOfferList();
 
-        KonsyliumScraper konsyliumScraper = new KonsyliumScraper(return_pages: 5);
-        var konsyliumList = konsyliumScraper.GetOfferList();
+        //KonsyliumScraper konsyliumScraper = new KonsyliumScraper(return_pages: 5);
+        //var konsyliumList = konsyliumScraper.GetOfferList();
+
+        var db_handler = new DbHandler(File.ReadAllText(@"C:\Users\Guest\Desktop\lekarze\connection_string.txt"));
+
+        foreach ( IOffer offer in klinikaList )
+        {
+            db_handler.SendOffer(offer);
+        }
+
     }
 }

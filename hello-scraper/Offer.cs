@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using OpenQA.Selenium.Internal;
 using System.Text.RegularExpressions;
+using OpenQA.Selenium.DevTools.V123.Page;
+using System.Linq.Expressions;
 
 namespace hello_scraper
 {
@@ -27,6 +29,7 @@ namespace hello_scraper
         public string? date { get; set; }
         public string location { get; set; }
         public decimal? salary { get; set; }
+        public string id { get; set; }
 
         protected IWebElement parentElement;
         public Offer(IWebElement parentElement)
@@ -36,12 +39,14 @@ namespace hello_scraper
             this.location = getLocation();
             this.major = getMajor();
             this.salary = getSalary();
+            this.id = getId();
         }
 
         public abstract string getMajor();
         protected abstract string? getDate();
         protected abstract string getLocation();
         protected abstract decimal? getSalary();
+        protected abstract string? getId();
     }
 
     public class KonsyliumOffer : Offer
@@ -51,6 +56,7 @@ namespace hello_scraper
         protected override string getLocation() { return parentElement.FindElement(By.ClassName("workplace")).Text; }
         protected override string? getDate() { return parentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago"); }
         protected override decimal? getSalary() { return null; }
+        protected override string? getId() { return null; }
     }
 
 
@@ -78,6 +84,14 @@ namespace hello_scraper
                 }
             }
             catch { return null; }
+        }
+        protected override string? getId()
+        {
+            IWebElement a = parentElement.FindElement(By.XPath(".."));
+            string url = a.GetAttribute("href");
+            Match match = Regex.Match(url, $"/([^/]+)/?$");
+            if (match.Success) { return match.Value; }
+            else { return null; }
         }
     }
 }

@@ -46,7 +46,7 @@ namespace hello_scraper
         protected abstract string? getDate();
         protected abstract string getLocation();
         protected abstract decimal? getSalary();
-        protected abstract string? getId();
+        protected abstract string getId();
     }
 
     public class KonsyliumOffer : Offer
@@ -56,7 +56,12 @@ namespace hello_scraper
         protected override string getLocation() { return parentElement.FindElement(By.ClassName("workplace")).Text; }
         protected override string? getDate() { return parentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago"); }
         protected override decimal? getSalary() { return null; }
-        protected override string? getId() { return null; }
+        protected override string getId()
+        {
+            var href = parentElement.FindElement(By.CssSelector("a")).GetAttribute("href");
+            Match match = Regex.Match(href, $"\\d+$");
+            return "konsylium-" + match.Value;
+        }
     }
 
 
@@ -85,13 +90,13 @@ namespace hello_scraper
             }
             catch { return null; }
         }
-        protected override string? getId()
+        protected override string getId()
         {
             IWebElement a = parentElement.FindElement(By.XPath(".."));
             string url = a.GetAttribute("href");
             Match match = Regex.Match(url, $"/([^/]+)/?$");
-            if (match.Success) { return match.Value; }
-            else { return null; }
+            if (match.Success) { return "klinika-" + match.Value.Replace("/", ""); }
+            else { return ""; }
         }
     }
 }

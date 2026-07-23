@@ -18,17 +18,27 @@ namespace hello_scraper
             _connectionString = connectionString;
         }
 
-        public void SendOffer (IOffer offer)
+        public void SendOffer (Offer offer)
         {
-            string query = @" INSERT INTO offers (major, location, date, salary) VALUES (@Major, @Location, @Date, @Salary);";
+            string query = @" INSERT INTO offers (id, major, location, salary, website) VALUES (@id, @Major, @Location, @Salary, @Website);";
             using IDbConnection db = new NpgsqlConnection(_connectionString);
-            db.Execute(query, new
+            try
             {
+                db.Execute(query, new
+            {
+                id = offer.id,
                 Major = offer.major,
                 Location = offer.location,
                 Date = offer.date,
-                Salary = offer.salary
+                Salary = offer.salary,
+                Website = offer.website
             });
+
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine (ex.ToString ());
+            }
         }
 
 

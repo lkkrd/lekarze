@@ -11,6 +11,7 @@ using OpenQA.Selenium.Internal;
 using System.Text.RegularExpressions;
 using OpenQA.Selenium.DevTools.V123.Page;
 using System.Linq.Expressions;
+using OpenQA.Selenium.DevTools.V124.Storage;
 
 namespace hello_scraper
 {
@@ -30,6 +31,7 @@ namespace hello_scraper
         public string location { get; set; }
         public decimal? salary { get; set; }
         public string id { get; set; }
+        public string website { get; set; }
 
         protected IWebElement parentElement;
         public Offer(IWebElement parentElement)
@@ -41,17 +43,20 @@ namespace hello_scraper
             this.salary = getSalary();
             this.id = getId();
         }
-
         public abstract string getMajor();
         protected abstract string? getDate();
         protected abstract string getLocation();
         protected abstract decimal? getSalary();
         protected abstract string getId();
+        
     }
 
     public class KonsyliumOffer : Offer
     {
-        public KonsyliumOffer(IWebElement parentElement) : base(parentElement) { }
+        public KonsyliumOffer(IWebElement parentElement) : base(parentElement)
+        {
+            this.website = "Konsulium24.pl";
+        }
         public override string getMajor() { return parentElement.FindElement(By.ClassName("spec")).Text; }
         protected override string getLocation() { return parentElement.FindElement(By.ClassName("workplace")).Text; }
         protected override string? getDate() { return parentElement.FindElement(By.ClassName("time-ago")).GetAttribute("data-time-ago"); }
@@ -68,7 +73,11 @@ namespace hello_scraper
 
     public class KlinikaOffer : Offer
     {
-        public KlinikaOffer(IWebElement parentElement) : base(parentElement) { }
+        public KlinikaOffer(IWebElement parentElement) : base(parentElement)
+        {
+            this.website = "Klinikaofert.pl";
+        }
+        
         public override string getMajor() { return parentElement.FindElement(By.XPath("div/div[1]/h2/span[2]")).Text; }
         protected override string getLocation() { return parentElement.FindElement(By.XPath("div/div[4]/div/p[2]")).Text; }
 

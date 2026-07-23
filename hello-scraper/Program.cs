@@ -10,17 +10,15 @@ class Program
 {
     public static void Main()
     {
-        Scraper konsylium = new KonsyliumScraper();
+        Scraper konsylium = new KonsyliumScraper(2);
         var konsyliumList = konsylium.GetOfferList();
 
+        var db_handler = new DbHandler(File.ReadAllText(@"C:\Users\mrm\Desktop\lekarze\connection_string.txt"));
 
-
-        //var db_handler = new DbHandler(File.ReadAllText(@"C:\Users\Guest\Desktop\lekarze\connection_string.txt"));
-
-        //foreach ( IOffer offer in klinikaList )
-        //{
-        //    db_handler.SendOffer(offer);
-        //}
+        foreach (Offer offer in konsyliumList)
+        {
+            db_handler.SendOffer(offer);
+        }
 
     }
 }
